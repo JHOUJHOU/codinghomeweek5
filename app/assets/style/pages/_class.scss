@@ -1,0 +1,15 @@
+.slide-class {
+  border: 1px solid $light;
+  background: $dark2;
+  color: $light;
+  &:hover {
+    border: 1px solid $primary;
+    color: $primary;
+  }
+  a { 
+    color: white;
+    &:hover {
+      color: $primary;
+    }
+  }
+}

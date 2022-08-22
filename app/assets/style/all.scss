@@ -1,0 +1,11 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "./helpers/utilities";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+@import './helpers/reset.scss';
+@import './helpers/gradients';
+@import './pages/index.scss';
+@import './pages/class.scss'

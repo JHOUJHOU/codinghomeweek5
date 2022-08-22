@@ -1,0 +1,154 @@
+.banner {
+  height: 100Vh;
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home_mobile.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @media(min-width: 768px) {
+    height: 100Vh;
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home.jpg?raw=true") no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+}
+.square {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+}
+.service-border-hover:hover {
+  border : 1px solid $primary;
+  border-radius: 12px;
+  background: $dark3;
+}
+.card-hover:hover {
+  border : 2px solid $red;
+  border-radius: 24px;
+}
+.superpower {
+  height: 100Vh;
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_share.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+.student01 {
+  color: #494755;
+}
+.swiper-img {
+  position: relative;
+}
+.student01-card {
+  border-top-left-radius: 24px;
+  border-top-right-radius:  24px;
+  border-bottom-right-radius: 24px;
+  position: absolute;
+  top: 25px;
+  left: -20px;
+}
+.menu-book {
+  font-size: 100px;
+}
+.squareRounded {
+  display: none;
+  width: 32px;
+  height: 32px;
+  &-topLeft {
+    border-top: 2px solid #62DB54;
+    border-left: 2px solid #62DB54;
+    border-top-left-radius: 10px;
+  }
+  &-topRight {
+    border-top: 2px solid #62DB54;
+    border-right: 2px solid #62DB54;
+    border-top-right-radius: 10px;
+  }
+  &-bottomLeft {
+    border-bottom: 2px solid #62DB54;
+    border-left: 2px solid #62DB54;
+    border-bottom-left-radius: 10px;
+  }
+  &-bottomRight {
+    border-bottom: 2px solid #62DB54;
+    border-right: 2px solid #62DB54;
+    border-bottom-right-radius: 10px;
+  }
+}
+.card:hover {
+  .squareRounded {
+    display: block;
+  }
+}
+.info01 {
+  height: 263px;
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info01.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @include media-breakpoint-up(lg){
+    height: 615px;
+    background-color: $dark2;
+    opacity: 0.9;
+    &:hover{
+      opacity: 0.1;
+    }
+  }
+}
+.info02 {
+  height: 263px;
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info02.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @include media-breakpoint-up(lg){
+    height: 615px;
+  }
+}
+.info03 {
+  height: 263px;
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info03.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @include media-breakpoint-up(lg){
+    height: 615px;
+  }
+}
+.info04 {
+  height: 263px;
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info04.jpg?raw=true") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @include media-breakpoint-up(lg){
+    height: 615px;
+  }
+}
+.need {
+  .text-opacity-50 {
+    opacity : 50%;
+  }
+  .material-icons {
+    color: $primary;
+    @include media-breakpoint-up(lg){
+      color: $light;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  .border-tips {
+    border: 3px solid $primary;
+    background: $primary;
+    @include media-breakpoint-up(lg){
+      border: 3px solid $light;
+      background: $light;
+      &:hover {
+        border: 3px solid $primary;
+        background: $primary;
+      }
+    }
+    .border-tips:hover {
+      border: 3px solid $primary;
+      background: $primary;
+      @include media-breakpoint-up(lg){
+        border: 3px solid $light;
+        background: $light;
+      }
+    }
+  }
+}

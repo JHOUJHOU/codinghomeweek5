@@ -1,0 +1,17 @@
+@mixin gradient-y-180($start-color:$secondary , $end-color: $primary, $start-percent: null, $end-percent: null) {
+  background-image: linear-gradient(180deg, $start-color $start-percent, $end-color $end-percent);
+}
+.gradient-y{
+  @include gradient-y-180;
+}
+.text-gradient-y-180{
+  @include gradient-y-180;
+  background-clip: text;
+  color: transparent;
+}
+@mixin gradient-y-104($start-color:$secondary , $end-color: $primary, $start-percent: null, $end-percent: null) {
+  background-image: linear-gradient(104deg, $start-color $start-percent, $end-color $end-percent);
+}
+.bg-gradient-y-104{
+  @include gradient-y-104;
+}
